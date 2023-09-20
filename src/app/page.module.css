@@ -1,0 +1,30 @@
+.init {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(360deg, #74BCED, #5EF23A) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    background: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent[data-isOpen="true"] {
+    width: 400px;
+    height: 200px;
+}
+
+.child {
+    width: 40px;
+    height: 40px;
+    background: #f107a3;
+    border-radius: 50%;
+}
