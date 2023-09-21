@@ -11,6 +11,6 @@ describe('env-test', () => {
     });
 
     it('should have a NAME equal to NextTemplate', () => {
-        expect(process.env.NAME).toBe('NextTemplate');
+        expect(process.env.NAME).toBe('NEXTJSCAREER');
     });
 });

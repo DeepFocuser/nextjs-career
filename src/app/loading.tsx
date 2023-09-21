@@ -1,10 +1,14 @@
 export default function Loading() {
-  return (<>
-    <div className="absolute top-0 right-0 h-screen w-screen z-50 flex justify-center items-center">
-      <div className="animate-spin rounded-full h-60 w-48 border-y-8 border-green-300"></div>
-    </div>
-    <div className="absolute top-0 right-0 h-screen w-screen z-45 flex justify-center items-center">
-      <p className="text-center text-xl">🌜 Please wait a moment~ 🌛</p>
-    </div>
-  </>);
+    return (
+        <>
+            <div className="absolute right-0 top-0 z-50 flex h-screen w-screen items-center justify-center">
+                <div className="h-60 w-48 animate-spin rounded-full border-y-8 border-green-300"></div>
+            </div>
+            <div className="z-45 absolute right-0 top-0 flex h-screen w-screen items-center justify-center">
+                <p className="text-center text-xl">
+                    🌜 Please wait a moment~ 🌛
+                </p>
+            </div>
+        </>
+    );
 }
