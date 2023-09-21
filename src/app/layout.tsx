@@ -6,7 +6,6 @@ import NavigationEvents from "./navigation-events";
 import Loading from "./loading";
 import GoogleAnalytics from "@/libs/googleanalytics";
 import {Providers} from "./providers";
-import styles from './page.module.css'
 
 export const metadata = {...siteMetadata};
 
@@ -15,13 +14,14 @@ const interFont = InterFont({
 });
 
 export default function RootLayout({children}: { children: ReactNode }) {
-    return (<html lang="ko" className={`${interFont.className}`}>
+    return (<html lang="ko"
+                  className={`${interFont.className} ${"bg-gradient-to-r from-sky-300 to-fuchsia-200"}`}>
     {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (<GoogleAnalytics
         GA_TRACKING_ID={process.env.NEXT_PUBLIC_GA_TRACKING_ID}
     />)}
     <body className="p-0 m-0">
     <Providers>
-        <header></header>
+        {/*<header></header>*/}
         <main>{children}</main>
         <Suspense fallback={<Loading/>}>
             <NavigationEvents/>

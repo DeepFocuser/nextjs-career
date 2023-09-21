@@ -1,32 +1,27 @@
 "use client";
 
-import {motion, AnimatePresence} from "framer-motion"
-import {memo, useState} from "react";
-import styles from './page.module.css'
-import Link from 'next/link';
-import {useRouter} from "next/navigation";
+import * as React from "react";
+import {memo} from "react";
+import {motion} from "framer-motion";
 
 function Home() {
 
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
-        <div className={`${styles.init}`}>
-            <AnimatePresence>
-            <motion.div
-                layout
-                data-isOpen={isOpen}
-                initial={{ borderRadius: 50 }}
-                className={`${styles.parent}`}
-                onClick={() => setIsOpen(!isOpen)}
-            >
-            </motion.div>
-            </AnimatePresence>
-        </div>);
+        <motion.div className="mx-auto w-3/5 h-screen bg-white"
+                    initial={{opacity: 0, scale: 0.0, y: "20%"}}
+                    animate={{
+                        opacity: [0.0, 0.2, 0.4, 0.8, 1],
+                        scale: [0.0, 0.1, 0.2, 0.5, 1],
+                        rotate: [0, 180, 360, 720, 1080],
+                        borderRadius: ["0%", "100%", "50%", "25%", "10%", "0%"],
+                    }}
+                    transition={{
+                        ease: "linear",
+                        duration: 1
+                    }}
+        >
+        </motion.div>
+    );
 }
-
-const spring = {
-    type: "spring", duration: 1
-};
 
 export default memo(Home);
