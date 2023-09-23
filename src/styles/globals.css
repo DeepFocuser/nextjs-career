@@ -8,7 +8,7 @@
 
 /* 웹킷 브라우저용 스크롤바 스타일링 */
 ::-webkit-scrollbar {
-    width: 0px; /* 가로 스크롤바 너비 0으로 설정 */
+    width: 7px; /* 가로 스크롤바 너비 0으로 설정 */
     height: 0px; /* 스크롤바 높이 지정 (세로 스크롤바) */
 }
 
@@ -20,6 +20,6 @@
 /* 스크롤바 슬라이더 스타일 */
 ::-webkit-scrollbar-thumb {
     /*background-color: #747474;*/
-    background-image: linear-gradient(darkorange, orange); /* 슬라이더 배경색 */
+    background-image: linear-gradient(cornflowerblue, mediumpurple); /* 슬라이더 배경색 */
     border-radius: 5px; /* 슬라이더 모서리 둥글게 처리 */
 }

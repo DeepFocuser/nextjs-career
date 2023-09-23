@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             lang="ko"
             className={`${
                 interFont.className
-            } ${'bg-gradient-to-r from-sky-300 to-fuchsia-200'}`}
+            } ${'bg-gradient-to-r from-blue-300 to-purple-300'}`}
         >
             {process.env.NEXT_PUBLIC_GA_TRACKING_ID && (
                 <GoogleAnalytics
