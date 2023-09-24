@@ -1,6 +1,6 @@
 {
-    "name": "DeepFocuser Next.js App",
-    "short_name": "DeepFocuser App",
+    "name": "DeepFocuser Next.js Resume App",
+    "short_name": "DeepFocuser Resume",
     "icons": [
         {
             "src": "/images/me.jpg",

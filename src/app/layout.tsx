@@ -6,6 +6,7 @@ import NavigationEvents from './navigation-events';
 import Loading from './loading';
 import GoogleAnalytics from '@/libs/googleanalytics';
 import { Providers } from './providers';
+import "aos/dist/aos.css";
 
 export const metadata = { ...siteMetadata };
 
