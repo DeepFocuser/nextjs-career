@@ -1,23 +1,41 @@
-import {IconType} from 'react-icons';
+import { IconType } from 'react-icons';
 
 export type SiteConfig = {
-    name: string; description: string; url: string; ogImageUrl: string; links: {
+    name: string;
+    description: string;
+    url: string;
+    ogImageUrl: string;
+    links: {
         github: string;
     };
 };
 
 export type General = {
-    name: string; jobTitle: string; website: string; about: string; contacts: {
-        label: string; value: string; href: string;
+    name: string;
+    jobTitle: string;
+    website: string;
+    about: string;
+    contacts: {
+        label: string;
+        value: string;
+        href: string;
     }[];
 };
 
 export type Content = {
-    title: string; items: {
-        title: string; subTitle: string; date: string; description: string;
+    title: string;
+    items: {
+        title: string;
+        subTitle: string;
+        date: string;
+        description: string;
     }[];
 };
 
 export type Item = {
-    id: number; color: string; name: string; percentage: number; Icon: IconType | any;
+    id: number;
+    color: string;
+    name: string;
+    percentage: number;
+    Icon: IconType | any;
 };
