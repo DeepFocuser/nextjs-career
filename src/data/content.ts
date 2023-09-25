@@ -1,21 +1,33 @@
-import { Content } from '@/types';
+import {Content} from '@/types';
 
 export const contentData: Content[] = [
     {
         title: 'Work Experience',
         items: [
             {
-                title: 'AI Developer at Com2verse',
-                subTitle: 'Remote',
-                date: '2020 - Present',
+                title: '컴투버스',
+                subTitle: 'AI / Web 개발자',
+                date: '2022.06 - Present',
                 description: 'AI ~',
             },
             {
-                title: 'AI Developer at Hyundai Autoever',
-                subTitle: 'Remote',
-                date: '2016 - 2020',
+                title: '현대오토에버',
+                subTitle: 'AI 개발자',
+                date: '2020.10 - 2022.06',
                 description: 'AI ~',
             },
+            {
+                title: '알체라',
+                subTitle: 'AI 개발자',
+                date: '2019.04 - 2020.09',
+                description: 'AI ~',
+            },
+            {
+                title: '고영테크놀러지',
+                subTitle: 'AI 개발자',
+                date: '2018.01 - 2019.03',
+                description: 'AI ~',
+            }
         ],
     },
     {

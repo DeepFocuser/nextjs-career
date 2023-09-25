@@ -1,23 +1,23 @@
 'use client';
 
-import { Martian_Mono, Sunflower } from 'next/font/google';
+import {Martian_Mono, Sunflower} from 'next/font/google';
 import * as React from 'react';
-import { memo, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import {memo, useEffect} from 'react';
+import {motion} from 'framer-motion';
 import Image from 'next/image';
-import { generalData } from '@/data/general';
-import type { Content } from '@/types';
-import { contentData } from '@/data/content';
+import {generalData} from '@/data/general';
+import type {Content} from '@/types';
+import {contentData} from '@/data/content';
 import Link from 'next/link';
 import profilePic from '../../public/images/we.jpg';
-import { TfiCommentsSmiley } from 'react-icons/tfi';
-import { MdWorkOutline } from 'react-icons/md';
-import { BiBookContent } from 'react-icons/bi';
-import { TbPhoneCall } from 'react-icons/tb';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import {TfiCommentsSmiley} from 'react-icons/tfi';
+import {MdWorkOutline} from 'react-icons/md';
+import {BiBookContent} from 'react-icons/bi';
+import {TbPhoneCall} from 'react-icons/tb';
+import {FaExternalLinkAlt} from 'react-icons/fa';
 import Skills from './components/lineitem';
 import Tag from './components/tag';
-import { GiGiftOfKnowledge, GiSkills } from 'react-icons/gi';
+import {GiGiftOfKnowledge, GiSkills} from 'react-icons/gi';
 import AOS from 'aos';
 
 const nameFont = Sunflower({
@@ -55,7 +55,7 @@ function Home() {
     return (
         <motion.div
             className="mx-auto mb-[7%] mt-[7%] h-full w-[98%] w-full bg-white min-[640px]:w-3/5 min-[1024px]:w-2/5"
-            initial={{ opacity: 0, scale: 0.0, y: '0%' }}
+            initial={{opacity: 0, scale: 0.0, y: '0%'}}
             animate={{
                 opacity: [0.0, 0.1, 0.2, 0.4, 0.8, 1],
                 scale: [1, 1, 1, 1, 1, 1], // x : ["5%", "0%"], y: ["0%", "5%"]
@@ -88,13 +88,13 @@ function Home() {
                         ></p>
                     </div>
                 </section>
-                <section className="my-8">
-                    <h2
+                <section className="mt-8">
+                    <p
                         className={`${contentFont.className} mb-4 flex items-center text-2xl text-slate-900`}
                     >
-                        <TfiCommentsSmiley className="mr-2" />
+                        <TfiCommentsSmiley className="mr-2"/>
                         <span>About</span>
-                    </h2>
+                    </p>
                     <div
                         className="mt-2 text-slate-600"
                         dangerouslySetInnerHTML={{
@@ -102,33 +102,33 @@ function Home() {
                         }}
                     ></div>
                 </section>
-                {contentData.map(({ title, items }: Content, index) => {
+                {contentData.map(({title, items}: Content, index) => {
                     return (
-                        <section key={index} className="my-8" data-aos="fade">
-                            <h2
+                        <section key={index} className="mt-8" data-aos="fade">
+                            <p
                                 className={`${contentFont.className} mb-4 flex items-center text-2xl text-slate-900`}
                             >
                                 {title === 'Work Experience' ? (
-                                    <MdWorkOutline className="mr-2" />
+                                    <MdWorkOutline className="mr-2"/>
                                 ) : (
-                                    <BiBookContent className="mr-2" />
+                                    <BiBookContent className="mr-2"/>
                                 )}
                                 <span>{title}</span>
-                            </h2>
-                            <div className="flex flex-col gap-6 rounded-xl border-4 p-2">
+                            </p>
+                            <div>
                                 {items.map((item, index) => {
                                     return (
-                                        <div className="flex" key={index}>
-                                            <div className="mr-8 w-full max-w-[100px] text-slate-500">
+                                        <div className="mt-4 rounded-xl border-4 p-2" key={index}>
+                                            <div className="text-slate-700 text-sm">
                                                 {item.date}
                                             </div>
-                                            <div className="flex flex-1 flex-col">
-                                                <h4>{item.title}</h4>
-                                                <p className="text-slate-700 dark:text-gray-400">
+                                            <div>
+                                                <p className="mt-1 text-lg">{item.title}</p>
+                                                <p className="text-slate-600 mt-1">
                                                     {item.subTitle}
                                                 </p>
                                                 {item.description ? (
-                                                    <p className="mt-2 text-slate-600">
+                                                    <p className="mt-2 text-slate-500">
                                                         {item.description}
                                                     </p>
                                                 ) : null}
@@ -141,34 +141,34 @@ function Home() {
                     );
                 })}
                 <section className="mt-8 text-sm" data-aos="fade">
-                    <h2
+                    <p
                         className={`${contentFont.className} mb-4 flex items-center text-2xl text-slate-900`}
                     >
-                        <GiSkills className="mr-2" />
+                        <GiSkills className="mr-2"/>
                         <span>Professional Skills</span>
-                    </h2>
+                    </p>
                     <div className="rounded-xl border-4 p-2">
-                        <Skills />
+                        <Skills/>
                     </div>
                 </section>
                 <section className="mt-8 text-sm" data-aos="fade">
-                    <h2
+                    <p
                         className={`${contentFont.className} mb-4 flex items-center text-2xl text-slate-900`}
                     >
-                        <GiGiftOfKnowledge className="mr-2" />
+                        <GiGiftOfKnowledge className="mr-2"/>
                         <span>Knowledges</span>
-                    </h2>
+                    </p>
                     <div className="flex flex-wrap justify-center rounded-xl border-4 p-2">
-                        <Tag />
+                        <Tag/>
                     </div>
                 </section>
                 <section className="mt-8 text-sm" data-aos="fade">
-                    <h2
+                    <p
                         className={`${contentFont.className} mb-4 flex items-center text-2xl text-slate-900`}
                     >
-                        <TbPhoneCall className="mr-2" />
+                        <TbPhoneCall className="mr-2"/>
                         <span>Contact</span>
-                    </h2>
+                    </p>
                     <div className="flex flex-col gap-2 rounded-xl border-4 p-2">
                         {generalData.contacts.map((contact, index) => {
                             return (
@@ -189,7 +189,7 @@ function Home() {
                                             <span className="mr-2">
                                                 {contact.value}
                                             </span>
-                                            <FaExternalLinkAlt />
+                                            <FaExternalLinkAlt/>
                                         </Link>
                                     </div>
                                 </div>
