@@ -1,12 +1,16 @@
 'use client';
 
-import {Line} from 'rc-progress';
-import type {Item} from '@/types';
-import {FaPython} from 'react-icons/fa';
-import {BiLogoJavascript, BiLogoReact, BiLogoTypescript,} from 'react-icons/bi';
-import {SiCsharp, SiPytorch, SiTensorflow} from 'react-icons/si';
-import {BsUnity} from 'react-icons/bs';
-import {TbBrandNextjs} from 'react-icons/tb';
+import { Line } from 'rc-progress';
+import type { Item } from '@/types';
+import { FaPython } from 'react-icons/fa';
+import {
+    BiLogoJavascript,
+    BiLogoReact,
+    BiLogoTypescript,
+} from 'react-icons/bi';
+import { SiCsharp, SiPytorch, SiTensorflow } from 'react-icons/si';
+import { BsUnity } from 'react-icons/bs';
+import { TbBrandNextjs } from 'react-icons/tb';
 
 function Skills() {
     const lineArray: Item[] = [
@@ -81,7 +85,7 @@ function Skills() {
                 <div className="mb-4" key={item.id}>
                     <div className="flex items-center justify-between">
                         <div className="flex items-center text-base font-bold">
-                            <item.Icon className="mr-2"/>
+                            <item.Icon className="mr-2" />
                             <p>{item.name}</p>
                         </div>
                         <div className="pr-5 text-base font-bold">
