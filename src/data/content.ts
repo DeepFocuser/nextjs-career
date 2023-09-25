@@ -1,4 +1,4 @@
-import {Content} from '@/types';
+import { Content } from '@/types';
 
 export const contentData: Content[] = [
     {
