@@ -1,4 +1,4 @@
-import type {General} from '@/types';
+import type { General } from '@/types';
 
 export const generalData: General = {
     name: '김종곤',

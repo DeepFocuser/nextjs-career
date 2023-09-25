@@ -11,7 +11,7 @@ export const contentData: Content[] = [
                 description:
                     '<p class="text-sm mt-1">1. Human Matting Algorithm 개발 및 유니티 적용</p>' +
                     '<p class="text-sm mt-1">2. Face Landmark for Avatar Algorithm 개발 및 유니티 적용</p>' +
-                    '<p class="text-sm mt-1">3. Voice Activity Detection/ Voice Denoiser 개발 및 적용</p>' +
+                    '<p class="text-sm mt-1">3. Voice Activity Detection/ Voice Denoiser 개발 및 유니티 적용</p>' +
                     `<p class="text-sm mt-1">4. Front End 신기술 조사 / Next.js(app 기반) 도입</p>` +
                     '<p class="text-xs mt-2"># 팀내 study / 신기술 도입 주도</p><p class="text-xs mt-1"># 주니어 직원 과제 매니징 및 멘토 역할</p>',
             },
