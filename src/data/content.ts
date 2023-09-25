@@ -58,7 +58,7 @@ export const contentData: Content[] = [
             },
             {
                 title: '<p class="text-lg font-bold mt-2 bg-gradient-to-r from-rose-800 to-rose-300 bg-clip-text text-transparent">광운대학교</p>',
-                subTitle: '로봇학부 지능시스템제어 전공',
+                subTitle: '로봇학부 지능시스템 전공',
                 date: '2010.03 - 2016.02',
                 description:
                     '<p class="mt-1 text-sm">1. 평균 학점 : 3.79</p>' +
