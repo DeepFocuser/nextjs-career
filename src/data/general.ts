@@ -1,4 +1,4 @@
-import type { General } from '@/types';
+import type {General} from '@/types';
 
 export const generalData: General = {
     name: '김종곤',
@@ -6,13 +6,13 @@ export const generalData: General = {
         "<span class='bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text font-bold text-transparent'>AI</span><span class='text-gray-700'> / </span><span class='bg-gradient-to-r from-orange-600 to-orange-300 bg-clip-text font-bold text-transparent'>Web Developer</span>",
     about:
         "<span class='text-md'>저는 </span>" +
-        "<span class='text-orange-600 font-bold'>6년차</span>" +
-        "<span class='bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text font-bold text-transparent'> AI</span>" +
+        "<span><span class='text-purple-600 font-bold'>2(석사)</span> + <span class='text-orange-600 font-bold'>6(실무)</span><span> 년차</span></span>" +
+        "<span class='bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text font-bold text-transparent'>  AI</span>" +
         "<span class='text-gray-700 font-bold'> / </span>" +
         "<span class='bg-gradient-to-r from-orange-600 to-orange-400 bg-clip-text font-bold text-transparent'>Web 개발자 김종곤</span>" +
         '<span> 입니다.</span>' +
         "<p class='mt-2 text-sm leading-6'><span class='p-1 font-bold'>고객이 요구하는 문제를 AI(컴퓨터 비전, 자연어, 음성 등)로 풀어내고, 실 서비스(온디바이스, 온프레미스, 클라우드)에 적용하는 업무를 진행해 왔습니다.</span> 딥러닝 관련 프레임워크 및 다양한 프로그래밍 언어들을 잘 다루며, 처음 접하는 것들도 거리낌 없이 곧잘 하는 편입니다.<br/>" +
-        "<span class='p-1 font-bold'>좋은 개발자가 되기 위해서 끊임없이 노력하고 공부합니다.</span> 요즘에는 Web FrontEnd + AI 에 관심이 생겨서 JS, TS, React, NextJS / UI,UX 를 열심히 공부하고 있습니다.</p>" +
+        "<span class='p-1 font-bold'>좋은 개발자가 되기 위해서 끊임없이 노력하고 공부합니다.</span> 요즘에는 Web FrontEnd + AI 에 관심이 생겨서 JS, TS, React, NextJS / UI, UX 를 열심히 공부하고 있습니다.</p>" +
         "<p class='mt-4 p-1 text-xs'>😅 가능할지는 모르겠지만, 개발의 모든 분야를 경험해 보고 큰 그림을 그릴 수 있는 사람이 되고 싶습니다.</p>" +
         "<p class='mt-4 mb-2 text-md font-bold text-orange-600'>저를 표현하는 <span class='font-bold text-blue-500 underline'>5문장</span>은 아래와 같습니다.</p>" +
         "<div class='border-4 p-2 rounded-xl'><p class='font-bold text-sm'>1️⃣ 개발하는 것을 즐깁니다.<p>" +
